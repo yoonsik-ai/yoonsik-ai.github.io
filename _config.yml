@@ -1,0 +1,33 @@
+yaml
+# Site settings
+title: "Yoonsik Park | Academic Portfolio"
+email: yoonsik.park@kaist.ac.kr
+description: >-
+  Machine Learning Researcher | Data Scientist
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: ""
+github_username: "yoonsik-ai"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Custom variables
+name: "Yoonsik Park"
+position: "Machine Learning / Data Science"
+phone: "+82-10-2682-1595"
+
+</html>
