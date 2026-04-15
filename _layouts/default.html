@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title and page.title != 'Home' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="theme-color" content="#f7f7f5">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="page-shell">
+      <header class="site-header" id="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="#about" aria-label="Go to About Me">Yoonsik Park</a>
+
+          <nav class="site-nav" aria-label="Section navigation">
+            <a class="nav-link" data-nav href="#about">About Me</a>
+            <a class="nav-link" data-nav href="#news">News</a>
+            <a class="nav-link" data-nav href="#education">Education</a>
+            <a class="nav-link" data-nav href="#experiences">Experiences</a>
+            <a class="nav-link" data-nav href="#publication">Publication</a>
+            <a class="nav-link" data-nav href="#projects">Projects</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="container main-content">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>© <span id="current-year">2026</span> Yoonsik Park</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const header = document.getElementById('site-header');
+        const sections = Array.from(document.querySelectorAll('main section[id]'));
+        const navLinks = Array.from(document.querySelectorAll('[data-nav]'));
+
+        const handleHeader = () => {
+          header.classList.toggle('is-scrolled', window.scrollY > 8);
+        };
+
+        handleHeader();
+        document.addEventListener('scroll', handleHeader, { passive: true });
+
+        if ('IntersectionObserver' in window) {
+          const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+              }
+            });
+          }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -6% 0px'
+          });
+
+          sections.forEach((section) => revealObserver.observe(section));
+
+          const activeObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              const currentId = entry.target.getAttribute('id');
+              navLinks.forEach((link) => {
+                link.classList.toggle('is-active', link.getAttribute('href') === '#' + currentId);
+              });
+            });
+          }, {
+            rootMargin: '-30% 0px -55% 0px',
+            threshold: 0.01
+          });
+
+          sections.forEach((section) => activeObserver.observe(section));
+        } else {
+          sections.forEach((section) => section.classList.add('is-visible'));
+        }
+
+        const year = document.getElementById('current-year');
+        if (year) year.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>

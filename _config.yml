@@ -1,0 +1,11 @@
+title: Yoonsik Park
+email: yoonsik.park@kaist.ac.kr
+description: >-
+  Personal website of Yoonsik Park.
+baseurl: ""
+url: ""
+timezone: Asia/Seoul
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
