@@ -249,7 +249,7 @@ description: Yoonsik Park
       <h3>The Motivational Organizer &amp; Mentor (M.O.M.)</h3>
       <p class="project-meta">Google Gemma Sprint · Sep 2024 — Oct 2024</p>
       <p>
-        Developed a Gemma-based assistant for reminders, motivation, and lightweight productivity support.
+        Built a persona-driven conversational agent based on Gemma 2 for empathetic, nudge-based productivity support.
       </p>
       <div class="project-tags">
         <span class="tag">Gemma</span>
@@ -262,7 +262,7 @@ description: Yoonsik Park
       <h3>F.D.A.: Fine Dining Assistant</h3>
       <p class="project-meta">HCI Project · Sep 2024 — Dec 2024</p>
       <p>
-        Built an LLM-powered RAG chatbot for personalized fine dining recommendations and evaluated it with a 30-participant user study.
+        Built a RAG-based fine-dining chatbot that simulates professional service personas to deliver personalized, experiential fine-dining previews.
       </p>
       <div class="project-tags">
         <span class="tag">RAG</span>
@@ -275,7 +275,7 @@ description: Yoonsik Park
       <h3>Cooling with Nature</h3>
       <p class="project-meta">Time Series Project · Sep 2024 — Dec 2024</p>
       <p>
-        Forecasted data-center cooling energy consumption using weather and energy signals with ARIMAX and Transformer models.
+        Developed a hybrid ARIMAX-Transformer time-series model to forecast data center cooling consumption and optimize locations for energy efficiency.
       </p>
       <div class="project-tags">
         <span class="tag">Time Series</span>
