@@ -42,7 +42,7 @@ description: Yoonsik Park
           with interests in faithfulness, hallucination mitigation, and robust multimodal learning.
         </p>
         <p>
-        Previously, I received a B.S. in Data Science from Hanyang University, graduating early with Summa Cum Laude (Ranked 1st).
+        Previously, I received a B.S. in Data Science from Hanyang University, graduating early with Summa Cum Laude (Ranked 1st in Dept. of Data Science).
         </p>
       </div>
 
@@ -90,7 +90,7 @@ description: Yoonsik Park
 
     <article class="news-row">
       <div class="row-date">Aug. 2025</div>
-      <div class="row-body">🏅 Graduated early from Hanyang University with Summa Cum Laude (Ranked 1st) in 7 semesters. Thanks Hanyang! 🦁</div>
+      <div class="row-body">🏅 Graduated early in 7 semesters from Hanyang University with Summa Cum Laude, ranking 1st in the Department of Data Science. Thanks, Hanyang! 🦁</div>
     </article>
 
     <article class="news-row">
@@ -136,7 +136,7 @@ description: Yoonsik Park
       </div>
       <ul class="entry-points">
         <li>Cumulative GPA: 4.35/4.5 · Major GPA: 4.38/4.5.</li>
-        <li>Early graduation with Summa Cum Laude (Ranked 1st).</li>
+        <li>Early graduation with Summa Cum Laude (Ranked 1st in Dept. of Data Science).</li>
       </ul>
     </article>
   </div>
