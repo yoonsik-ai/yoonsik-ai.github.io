@@ -41,6 +41,9 @@ description: Yoonsik Park
           My current research focuses on visual reasoning in multimodal large language models,
           with interests in faithfulness, hallucination mitigation, and robust multimodal learning.
         </p>
+        <p>
+        Previously, I received a B.S. in Data Science from Hanyang University, graduating early with Summa Cum Laude (Ranked 1st).
+        </p>
       </div>
 
       <dl class="about-meta">
