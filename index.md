@@ -90,7 +90,7 @@ description: Yoonsik Park
 
     <article class="news-row">
       <div class="row-date">Aug. 2025</div>
-      <div class="row-body">🏅 Graduated early in 7 semesters from Hanyang University with Summa Cum Laude(Ranked 1st in the Department of Data Science). <br>
+      <div class="row-body">🏅 Graduated early in 7 semesters from Hanyang University with Summa Cum Laude (Ranked 1st in the Department of Data Science). <br>
       Thanks, Hanyang! 🦁</div>
     </article>
 
