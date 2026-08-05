@@ -72,9 +72,16 @@ description: Yoonsik Park
 <section id="news" class="section reveal">
   <h2 class="section-title">News</h2>
 
+  
+
   <div class="news-list simple-list">
+     <article class="news-row">
+       <div class="row-date">Jul. 2026</div>
+       <div class="row-body">🏆 HBD received the Best Paper Award (Undergraduate Division) at KCC 2026.</div>
+     </article>
+       
     <article class="news-row">
-      <div class="row-date">2026</div>
+      <div class="row-date">Jan.2026</div>
       <div class="row-body">📄 BiasEdit accepted to WWW 2026 (Oral Presentation). My first Paper!</div>
     </article>
 
@@ -154,14 +161,14 @@ description: Yoonsik Park
     <article class="entry">
       <div class="entry-head">
         <div>
-          <h3 class="entry-title">Research Intern</h3>
+          <h3 class="entry-title">AI Research Intern</h3>
           <p class="entry-subtitle">NAVER Place AI</p>
         </div>
         <div class="entry-date">Dec 2025 — Jan 2026</div>
       </div>
       <ul class="entry-points">
-        <li>Worked on passage-level domain detection for review verification.</li>
-        <li>Designed a classification head and task-specific loss for fine-grained text–metadata alignment.</li>
+        <li>Developed passage-level models for review relevance and informativeness assessment using an LLM-driven pipeline with 150K+ labeled samples.</li>
+        <li>Built an efficient model on a lightweight 0.8B-parameter embedding backbone, achieving 0.90+ F1 for relevance and 0.94+ F1 for informativeness.</li>
       </ul>
     </article>
 
@@ -201,7 +208,15 @@ description: Yoonsik Park
 
 <section id="publication" class="section reveal">
   <h2 class="section-title">Publication</h2>
-
+  <article class="publication-item simple-list-item">
+    <h3 class="entry-title">Harnessing Bias for Debiasing: Annotation-Free Prompt Learning for Robustness in CLIP</h3>
+    <p class="publication-authors"><strong>Yoonsik Park</strong> and Sungyong Baik</p>
+    <div class="publication-meta">
+      <span class="meta-chip">KCC 2026</span>
+      <span class="meta-chip">Best Paper Award · Undergraduate Division</span>
+    </div>
+  </article>
+     
   <article class="publication-item simple-list-item">
     <h3 class="entry-title">BiasEdit: A Training-Free Bias-Detect-and-Edit Framework for Learning Fair Visual Classifiers</h3>
     <p class="publication-authors">Jungwook Seo, <strong>Yoonsik Park</strong>, Changmin Lee, and Sungyong Baik</p>
@@ -224,7 +239,7 @@ description: Yoonsik Park
       <h3>HBD (Harnessing Bias for Debiasing)</h3>
       <p class="project-meta">Graduation Project · Hanyang University · Feb 2025 — Jun 2025</p>
       <p>
-        Developed a plug-in debiasing framework with PCA-based class-stratified analysis and bias-aware soft prompt refinement.
+        Developed an annotation-free CLIP prompt-learning framework that discovers pseudo-groups and combines bias-conflict and performance signals to improve worst-group robustness.
       </p>
       <div class="project-tags">
         <span class="tag">Fairness</span>
