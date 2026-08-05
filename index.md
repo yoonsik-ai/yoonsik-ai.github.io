@@ -86,7 +86,7 @@ description: Yoonsik Park
     </article>
     
     <article class="news-row">
-      <div class="row-date">Jan.2026</div>
+      <div class="row-date">Jan. 2026</div>
       <div class="row-body">📄 BiasEdit accepted to WWW 2026 (Oral Presentation). My first Paper!</div>
     </article>
     
