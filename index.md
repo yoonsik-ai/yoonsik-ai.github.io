@@ -79,17 +79,17 @@ description: Yoonsik Park
        <div class="row-date">Jul. 2026</div>
        <div class="row-body">🏆 HBD received the Best Paper Award (Undergraduate Division) at KCC 2026.</div>
      </article>
-       
-    <article class="news-row">
-      <div class="row-date">Jan.2026</div>
-      <div class="row-body">📄 BiasEdit accepted to WWW 2026 (Oral Presentation). My first Paper!</div>
-    </article>
 
     <article class="news-row">
       <div class="row-date">Mar. 2026</div>
       <div class="row-body">🎓 Started M.S. at KAIST AI and joined MLILAB.</div>
     </article>
-
+    
+    <article class="news-row">
+      <div class="row-date">Jan.2026</div>
+      <div class="row-body">📄 BiasEdit accepted to WWW 2026 (Oral Presentation). My first Paper!</div>
+    </article>
+    
     <article class="news-row">
       <div class="row-date">Dec. 2025</div>
       <div class="row-body">🔬 Joined NAVER Place AI as a research intern.</div>
