@@ -75,11 +75,6 @@ description: Yoonsik Park
   
 
   <div class="news-list simple-list">
-     <article class="news-row">
-       <div class="row-date">Jul. 2026</div>
-       <div class="row-body">🏆 HBD received the Best Paper Award (Undergraduate Division) at KCC 2026.</div>
-     </article>
-
     <article class="news-row">
       <div class="row-date">Mar. 2026</div>
       <div class="row-body">🎓 Started M.S. at KAIST AI and joined MLILAB.</div>
