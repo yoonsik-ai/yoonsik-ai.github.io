@@ -272,12 +272,13 @@ summary.paper-link::-webkit-details-marker { display: none; }
 
 .pub-highlight {
   display: inline-block;
-  padding: 2px 9px;
-  background: #faf5eb;
-  color: #8a6137;
-  border: 1px solid #eadfcf;
-  border-radius: 5px;
-  font-size: 0.86rem;
-  font-weight: 600;
+  padding: 2px 8px;
+  background: #f1f3f5;
+  color: #57636f;
+  border: 1px solid #e1e5e9;
+  border-radius: 4px;
+
+  font-size: 0.82rem;
+  font-weight: 500;
   line-height: 1.5;
 }
