@@ -1,0 +1,16 @@
+<section class="section" id="experiences" aria-labelledby="experience-heading">
+  <div class="section-heading"><h2 id="experience-heading">Experience</h2></div>
+  <div class="entry-list">
+    {% for item in site.data.experience %}
+    <article class="entry">
+      <div class="entry-period">{{ item.period | escape }}</div>
+      <div class="entry-content">
+        <h3>{{ item.title | escape }}</h3>
+        <p class="entry-organization">{% if item.url and item.url != '' %}<a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.organization | escape }}</a>{% else %}{{ item.organization | escape }}{% endif %}</p>
+        {% if item.details.size > 0 %}<ul class="entry-points">{% for detail in item.details %}<li>{{ detail | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+

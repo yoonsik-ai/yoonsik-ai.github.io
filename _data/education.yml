@@ -1,0 +1,18 @@
+# 학력은 최신 항목부터 작성합니다.
+# details에는 Markdown을 사용할 수 있습니다.
+- title: M.S. in Artificial Intelligence
+  organization: KAIST · Kim Jaechul Graduate School of AI
+  url: ""
+  period: Mar. 2026 – Expected 2028
+  details:
+    - "MLILAB · Advisor: Prof. Eunho Yang."
+    - Research on GUI agents, multimodal reasoning, and reliable visual grounding.
+
+- title: B.S. in Data Science
+  organization: Hanyang University (Seoul)
+  url: ""
+  period: Mar. 2022 – Aug. 2025
+  details:
+    - "**Summa Cum Laude** · Ranked first in the Department of Data Science."
+    - Early graduation in seven semesters.
+    - "Cumulative GPA: **4.35/4.5** · Major GPA: **4.38/4.5**."

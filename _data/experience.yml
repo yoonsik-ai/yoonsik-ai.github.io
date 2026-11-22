@@ -1,0 +1,26 @@
+# 경력은 최신 항목부터 작성합니다.
+# 아래 수치와 기간은 기존 홈페이지에 기재된 내용을 유지했습니다.
+- title: AI Research Intern
+  organization: NAVER Place AI
+  url: ""
+  period: Dec. 2025 – Jan. 2026
+  details:
+    - Developed passage-level models for review relevance and informativeness using an LLM-driven pipeline with 150K+ labeled samples.
+    - Built an efficient model on a 0.8B-parameter embedding backbone, achieving 0.90+ F1 for relevance and 0.94+ F1 for informativeness.
+
+- title: Undergraduate Research Intern
+  organization: KAIST · MLILAB
+  url: ""
+  period: Jun. 2025 – Aug. 2025
+  details:
+    - "Advisor: Prof. Eunho Yang."
+    - Investigated methods to mitigate hallucinations in multimodal large language models and improve visual faithfulness.
+
+- title: Undergraduate Research Intern
+  organization: Hanyang University · BAIKLAB
+  url: ""
+  period: Feb. 2024 – Jun. 2025
+  details:
+    - "Advisor: Prof. Sungyong Baik."
+    - Studied debiasing for vision models trained on web-sourced images.
+    - Extended the work to CLIP, with a focus on bias-robust soft prompts and worst-group robustness.

@@ -1,0 +1,30 @@
+# 기존 홈페이지의 소식 6개를 문구와 이모지 그대로 유지합니다.
+# 이후 새 소식은 아래 형식의 항목을 직접 추가하면 됩니다.
+# 새 소식은 date 기준 최신순으로 자동 정렬됩니다.
+# date는 문자열로 유지해주세요. 월만 알려진 소식은 01일을 정렬용으로 사용합니다.
+# 화면에는 월과 연도만 표시합니다. text에는 Markdown 링크/강조를 사용할 수 있습니다.
+# 공개 전 소식은 published: false로 설정합니다.
+
+- date: "2026-03-01"
+  text: "🎓 Started M.S. at KAIST AI and joined MLILAB."
+  published: true
+
+- date: "2026-01-01"
+  text: "📄 BiasEdit accepted to WWW 2026 (Oral Presentation). My first Paper!"
+  published: true
+
+- date: "2025-12-01"
+  text: "🔬 Joined NAVER Place AI as a research intern."
+  published: true
+
+- date: "2025-08-01"
+  text: "🏅 Graduated early in 7 semesters from Hanyang University with Summa Cum Laude (Ranked 1st in the Department of Data Science). <br>Thanks, Hanyang! 🦁"
+  published: true
+
+- date: "2025-06-01"
+  text: "🧪 Joined KAIST MLILAB as an undergraduate research intern."
+  published: true
+
+- date: "2024-02-01"
+  text: "🌱 Joined BAIKLAB at Hanyang University as an undergraduate research intern."
+  published: true

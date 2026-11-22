@@ -1,0 +1,29 @@
+# Copy this record to _data/publications.yml. Fill in verified public metadata.
+# Files in a public repository are public, even when published is false.
+# category: international | preprint | domestic
+# Use a venue acronym without the year, e.g. WWW, CVPR, KCC, arXiv.
+# Group order, headings and venue colors: _data/publication_settings.yml.
+- id: your-paper
+  title: "Your full paper title"
+  year: 2026
+  date: "2026-12-01"
+  category: preprint
+  venue: "arXiv"
+  highlight: ""
+  authors:
+    - Yoonsik Park
+    - Coauthor Name
+  summary: "One clear sentence about the contribution."
+  links: []
+  # When ready, replace links: [] with:
+  # links:
+  #   - label: Paper
+  #     url: "https://arxiv.org/abs/YOUR_REAL_ID"
+  #   - label: Code
+  #     url: "https://github.com/YOUR_ACCOUNT/YOUR_REPOSITORY"
+  bibtex: ""
+  # Optional figure: add only after uploading the real image file.
+  # image: "/assets/img/your-paper.webp"
+  # image_alt: "A brief description of the research figure"
+  published: false
+

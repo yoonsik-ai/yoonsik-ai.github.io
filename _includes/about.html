@@ -1,0 +1,29 @@
+{% assign profile = site.data.profile %}
+<section class="about-section" id="about" aria-labelledby="page-title">
+  <div class="about-layout">
+    <aside class="portrait-column" aria-label="Profile photograph">
+      <div class="photo-frame">
+        <picture>
+          {% if profile.image_webp and profile.image_webp != '' %}<source srcset="{{ profile.image_webp | relative_url }}" type="image/webp">{% endif %}
+          <img class="profile-photo" src="{{ profile.image | relative_url }}" alt="{{ profile.image_alt | default: 'Yoonsik Park' | escape }}" width="800" height="800" fetchpriority="high">
+        </picture>
+      </div>
+    </aside>
+    <div class="about-content">
+      <h1 id="page-title">{{ profile.name | escape }}</h1>
+      <div class="about-copy">
+        {% for paragraph in profile.bio %}{{ paragraph | markdownify }}{% endfor %}
+      </div>
+      <div class="profile-links" aria-label="Contact and profiles">
+        {% for link in profile.links %}
+          {% if link.url and link.url != '' %}
+          <a class="contact-link" href="{% if link.url contains '://' or link.url contains 'mailto:' %}{{ link.url | escape }}{% else %}{{ link.url | relative_url }}{% endif %}"{% if link.url contains '://' %} target="_blank" rel="noopener noreferrer"{% endif %}>
+            {{ link.label | escape }}
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+

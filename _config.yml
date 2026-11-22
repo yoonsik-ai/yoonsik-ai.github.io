@@ -1,11 +1,28 @@
 title: Yoonsik Park
 email: yoonsik.park@kaist.ac.kr
 description: >-
-  Personal website of Yoonsik Park.
+  Yoonsik Park is an M.S. student at KAIST AI and MLILAB, researching reliable
+  GUI agents and multimodal reasoning.
+url: "https://yoonsik-ai.github.io"
 baseurl: ""
-url: ""
+lang: en
 timezone: Asia/Seoul
 markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
+strict_front_matter: true
+
+# Content lives in _data/. These supporting files are not web pages.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - docs
+  - examples
+  - scripts
+  - PREVIEW.html
+  - .openai
+  - vendor
+  - node_modules
+

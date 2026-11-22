@@ -1,0 +1,22 @@
+{% assign updates = site.data.news | where_exp: 'item', 'item.published != false' | sort: 'date' | reverse %}
+{% if updates.size > 0 %}
+<section class="section" id="news" aria-labelledby="news-heading">
+  <div class="section-heading"><h2 id="news-heading">News</h2></div>
+  <div class="news-list">
+    {% for item in updates limit: 6 %}
+    <article class="news-row"><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><div class="news-body">{{ item.text | markdownify }}</div></article>
+    {% endfor %}
+  </div>
+  {% if updates.size > 6 %}
+  <details class="news-archive">
+    <summary><span class="when-closed">Earlier updates</span><span class="when-open">Fewer updates</span><span class="archive-count">{{ updates.size | minus: 6 }}</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary>
+    <div class="news-list">
+      {% for item in updates offset: 6 %}
+      <article class="news-row"><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><div class="news-body">{{ item.text | markdownify }}</div></article>
+      {% endfor %}
+    </div>
+  </details>
+  {% endif %}
+</section>
+{% endif %}
+

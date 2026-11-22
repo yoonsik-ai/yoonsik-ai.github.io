@@ -1,0 +1,107 @@
+# 논문은 각 그룹 안에서 최신순으로 정렬됩니다. date는 YYYY-MM-DD 문자열입니다.
+# 월까지만 확인된 학회 항목의 01일은 정렬용 값이며 실제 출판일을 뜻하지 않습니다.
+# category: international / preprint / domestic. published: false이면 홈페이지에서 숨깁니다.
+# venue에는 연도 없이 학회 약칭만 입력합니다. 배지 색상은 publication_settings.yml에서 관리합니다.
+# 링크가 없는 버튼은 만들지 않습니다. 새 논문은 README의 추가 예시를 참고하세요.
+
+- id: graft
+  title: "Learning Beyond What You Sample: Off-Policy-Aware Cross-Model Trajectory Exchange for RLVR"
+  year: 2026
+  date: "2026-09-29"
+  category: preprint
+  venue: arXiv
+  authors:
+    - Doohyuk Jang
+    - Yoonsik Park
+    - Gyouk Chu
+    - Sihwan Park
+    - Eunho Yang
+  summary: Enables heterogeneous language models to learn from one another’s reasoning trajectories when their own rollouts fail.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2609.37868
+  bibtex: |
+    @misc{jang2026graft,
+      title = {Learning Beyond What You Sample: Off-Policy-Aware Cross-Model Trajectory Exchange for RLVR},
+      author = {Jang, Doohyuk and Park, Yoonsik and Chu, Gyouk and Park, Sihwan and Yang, Eunho},
+      year = {2026},
+      eprint = {2609.37868},
+      archivePrefix = {arXiv},
+      url = {https://arxiv.org/abs/2609.37868}
+    }
+  published: true
+
+- id: flipdir
+  title: "Looks the Same, Answers Differently: Flip-Direction Steering for Robust Vision-Language Reasoning"
+  year: 2026
+  date: "2026-09-23"
+  category: preprint
+  venue: arXiv
+  authors:
+    - Yeonsung Jung
+    - Joonhyun Jeong
+    - Hoang Pham
+    - Joowon Kim
+    - Yoonsik Park
+    - Viet Dac Lai
+    - Eunho Yang
+  summary: Stabilizes vision-language reasoning under subtle image changes through selective activation steering.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2609.28851
+    - label: Project
+      url: https://yeonsungjung.github.io/projects/flipdir/
+  bibtex: |
+    @misc{jung2026flipdir,
+      title = {Looks the Same, Answers Differently: Flip-Direction Steering for Robust Vision-Language Reasoning},
+      author = {Jung, Yeonsung and Jeong, Joonhyun and Pham, Hoang and Kim, Joowon and Park, Yoonsik and Lai, Viet Dac and Yang, Eunho},
+      year = {2026},
+      eprint = {2609.28851},
+      archivePrefix = {arXiv},
+      url = {https://arxiv.org/abs/2609.28851}
+    }
+  published: true
+
+- id: hbd
+  title: "Harnessing Bias for Debiasing: Annotation-Free Prompt Learning for Robustness in CLIP"
+  year: 2026
+  date: "2026-06-01"
+  category: domestic
+  venue: KCC
+  highlight: Best Paper Award · Undergraduate Division
+  authors:
+    - Yoonsik Park
+    - Sungyong Baik
+  summary: Discovers latent bias groups without group annotations to improve the robustness of CLIP prompt learning.
+  links: []
+  published: true
+
+- id: biasedit
+  title: "BiasEdit: A Training-Free Bias-Detect-and-Edit Framework for Learning Fair Visual Classifiers"
+  year: 2026
+  date: "2026-04-01"
+  category: international
+  venue: WWW
+  highlight: Oral Presentation
+  authors:
+    - Jungwook Seo
+    - Yoonsik Park
+    - Changmin Lee
+    - Sungyong Baik
+  summary: Automatically identifies and edits dataset biases to improve visual classification without bias annotations.
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2605.28450
+    - label: Code
+      url: https://github.com/BAIKLAB/BiasEdit
+    - label: DOI
+      url: https://doi.org/10.1145/3774904.3792411
+  bibtex: |
+    @inproceedings{seo2026biasedit,
+      title = {BiasEdit: A Training-Free Bias-Detect-and-Edit Framework for Learning Fair Visual Classifiers},
+      author = {Seo, Jungwook and Park, Yoonsik and Lee, Changmin and Baik, Sungyong},
+      booktitle = {Proceedings of the ACM Web Conference 2026},
+      year = {2026},
+      doi = {10.1145/3774904.3792411}
+    }
+  published: true

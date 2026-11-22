@@ -1,0 +1,82 @@
+# 그룹 순서와 학회 배지 색상을 한곳에서 관리합니다.
+# 아래 색상은 홈페이지용 사용자 지정 팔레트이며 학회의 공식 브랜드 색상이나 등급을 뜻하지 않습니다.
+# 새 논문은 publications.yml에만 추가하면 됩니다. 미등록 학회는 기본 배지를 사용합니다.
+groups:
+  - id: international
+    title: International Conferences
+  - id: preprint
+    title: Preprints
+  - id: domestic
+    title: Domestic Conferences
+
+default_badge:
+  background: "#eef2f6"
+  text: "#516172"
+  border: "#dce3eb"
+preprint_badge:
+  label: Preprint
+  background: "#f0f1ee"
+  text: "#60635e"
+  border: "#dde0d9"
+
+venues:
+  CVPR:
+    background: "#edf3fb"
+    text: "#275996"
+    border: "#d6e3f3"
+  ICCV:
+    background: "#f0f0fb"
+    text: "#454a9c"
+    border: "#dcdcf2"
+  ECCV:
+    background: "#edf6f9"
+    text: "#246c86"
+    border: "#d3e6ed"
+  NeurIPS:
+    background: "#f2eff9"
+    text: "#65529a"
+    border: "#e0d9ef"
+  ICML:
+    background: "#edf6f6"
+    text: "#236c78"
+    border: "#d1e7e8"
+  ICLR:
+    background: "#eff6ef"
+    text: "#3f6d51"
+    border: "#d8e6d8"
+  AAAI:
+    background: "#fbf2e9"
+    text: "#945324"
+    border: "#efdfcd"
+  IJCAI:
+    background: "#faf5e9"
+    text: "#815f25"
+    border: "#eee2c5"
+  ACL:
+    background: "#ecf6f3"
+    text: "#296d69"
+    border: "#d2e9e1"
+  EMNLP:
+    background: "#f6f0f7"
+    text: "#77577d"
+    border: "#e8dcea"
+  NAACL:
+    background: "#eff4f9"
+    text: "#3e6486"
+    border: "#d8e3ee"
+  WWW:
+    background: "#f8eff2"
+    text: "#8b4a60"
+    border: "#ecd9e0"
+  KDD:
+    background: "#f9f0ed"
+    text: "#87514c"
+    border: "#edddd7"
+  SIGIR:
+    background: "#f3f5eb"
+    text: "#606b32"
+    border: "#e1e6ce"
+  KCC:
+    background: "#eef2f6"
+    text: "#516172"
+    border: "#dce3eb"

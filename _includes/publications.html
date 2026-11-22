@@ -1,0 +1,17 @@
+{% assign papers = site.data.publications | where_exp: 'paper', 'paper.published != false' | sort: 'date' | reverse %}
+{% if papers.size > 0 %}
+<section class="section research-section" id="publication" aria-labelledby="research-heading">
+  <div class="section-heading"><h2 id="research-heading">Publications &amp; Preprints</h2></div>
+  {% for group in site.data.publication_settings.groups %}
+    {% assign group_papers = papers | where: 'category', group.id %}
+    {% if group_papers.size > 0 %}
+    <section class="publication-group" aria-labelledby="{{ group.id | escape }}-heading">
+      <h3 class="publication-group-title" id="{{ group.id | escape }}-heading">{{ group.title | escape }}</h3>
+      <div class="publication-list">
+        {% for paper in group_papers %}{% include publication.html paper=paper %}{% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  {% endfor %}
+</section>
+{% endif %}
