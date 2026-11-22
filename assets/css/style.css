@@ -270,3 +270,14 @@ summary.paper-link::-webkit-details-marker { display: none; }
   .profile-link, .paper-link { color: #111; background: #fff; }
 }
 
+.pub-highlight {
+  display: inline-block;
+  padding: 2px 9px;
+  background: #faf5eb;
+  color: #8a6137;
+  border: 1px solid #eadfcf;
+  border-radius: 5px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
